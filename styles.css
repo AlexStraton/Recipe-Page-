@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+body {
+  background-color: #b6b8b8;
+}
+
+.omlette-img {
+  width: 30rem;
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+  margin: 5px 2;
+}
+
+.whole-container {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  width: 30rem;
+  margin: 0 auto;
+  padding: 15px;
+}
+.heading,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: brown;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: brown;
+}
+.prep-container {
+  border-radius: 30px;
+  background-color: rgb(223, 179, 179);
+  padding: 2px;
+}
+
+.instructions-list {
+  counter-increment: item;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+.instructions-list:before {
+  content: none;
+  margin-right: 10px;
+  content: counter(item);
+  background: brown;
+  border-radius: 37%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+}
+
+.nutrition-values {
+  display: block;
+  text-align: right !important;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .whole-container {
+    width: 100%;
+  }
+}
